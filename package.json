@@ -1,0 +1,24 @@
+{
+  "name": "tsbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "tsc",
+    "test": "node ./node_modules/jasmine-ts/lib/index.js tests/*.ts",
+    "start": "node dist/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.46",
+    "discord.js": "github:hydrabolt/discord.js",
+    "lokijs": "^1.5.1"
+  },
+  "devDependencies": {
+    "@ryancavanaugh/lokijs": "^1.2.13-alpha",
+    "@types/jasmine": "^2.6.0",
+    "jasmine": "^2.8.0",
+    "jasmine-ts": "^0.2.1"
+  }
+}
