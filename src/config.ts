@@ -3,3 +3,4 @@ export const prefix = "!";
 
 import {join} from 'path';
 export const dbPath = join(__dirname, 'db');
+

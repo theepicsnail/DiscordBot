@@ -26,12 +26,12 @@ bot.on("message",(msg)=>{
 import * as path from 'path';
 import * as fs from 'fs';
 fs.readdir(path.join(__dirname, 'commands'), (err, files)=>{
+	console.log("Loading plugins:");
 	for(const file of files) {
 		const plugin = path.basename(file).split(".")[0]
-		console.log(plugin);
+		console.log(`[${plugin}]`);
 		require(`./commands/${plugin}`)['default'](bot, helper);
 	}
 });
-
 
 bot.login(Config.token).catch(console.error.bind(console));
